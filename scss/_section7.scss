@@ -1,0 +1,53 @@
+section.hireMe {
+    @include flex(center, center, wrap);
+    width: 100%;
+    padding: 40px;
+    background-image: url("../img/bed.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 50;
+    position: relative;
+    min-height: 70vh;
+
+    div.hire {
+        @include flex(center, center, nowrap);
+        width: 100%;
+
+        div {
+            width: 180px;
+            height: 50px;
+            @include flex(center, center, nowrap);
+            background-color: $darkgreen;
+            cursor: pointer;
+            border: 2px solid $white;
+            color: $white;
+            font-size: 35px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 25px;
+        } 
+    }
+
+    h1 {
+        font-size: 75px;
+        @include flex(center, center, nowrap);
+        text-align: center;
+        font-weight: bold;
+        color: $white;
+        border-radius: 15px;
+        background-color: rgba(3, 51, 99, 0.623);
+        box-shadow: 0 8px 30px -1px #555;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+section.hireMe div.hire div:hover {
+    background-color: $lightgreen;
+    border: 2px solid $darkgreen;
+    color: $darkgreen;
+    transition: .3s ease;
+}

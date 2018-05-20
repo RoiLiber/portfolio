@@ -1,0 +1,174 @@
+section.contactMe {
+    @include flex(center, center, wrap);
+    background-color: $lightgreen;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    padding: 40px;
+    min-height: 90vh;
+
+    div.contact {
+        @include flex(center, center, wrap);
+        width: 100%;
+        font-size: 30px;
+
+        h1 {
+            font-weight: bold;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0;
+
+            span {
+                color: $darkgreen;
+            }
+        }
+    }
+
+    div.hr {
+        background-color: $darkgreen;
+        width: 150px;
+        height: 5px;
+        margin-bottom: 50px;
+    }
+
+    div.icontact {
+        @include flex(center, center, wrap);
+
+        div.icon {
+            width: 100%;
+            @include flex(center, center, wrap);
+            margin: 10px;
+
+            div {
+                border: 2px solid $white;
+                border-radius: 50%;
+                @include flex(center, center, wrap);
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                background-color: $darkgreen;
+            }
+
+            h2 {
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               color: $white;
+            }
+        }
+    }
+
+    div.icontact div div:hover {
+        background-color: $lightgreen;
+        border: 2px solid $darkgreen;
+        color: $darkgreen;
+    }
+
+    form {
+        @include flex(center, center, wrap);
+        width: 100%;
+        background-color: $white;
+        background-color: rgba(72, 72, 72, 0.281);
+        padding-right: 15px;
+
+        div.form, div.textarea {
+            @include flex(center, center, wrap);
+            width: 100%;
+            margin: 15px 0;
+
+            p {
+                @include flex(center, center, nowrap);
+                position: relative;
+                top: -2px;
+                left: 35px;
+                z-index: 2;
+                color: $darkgreen;
+                font-size: 32px;
+                width: 20px;
+            }
+
+            p.tArea {
+                top: -30px;
+            }
+
+            input {
+                width: 90%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding: 10px 0 10px 50px;
+                background-color: $white;
+                color: $darkgreen;
+                position: relative;
+            }
+
+            textarea {
+                width: 90%;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                overflow: hidden;
+                background-color: $white;
+                color: $darkgreen;
+                padding: 10px 0 10px 50px;
+            }
+        }
+
+        div.buttonArea {
+            width: 100%;
+            margin: 50px;
+            @include flex(center, center, nowrap);
+
+            input {
+                display: flex;
+                padding: 5px 10px;
+                font-size: 25px;
+                border: 2px solid $white;
+                border-radius: 25px;
+                font-weight: bold;
+                background-color: $darkgreen;
+                margin: 5px;
+                cursor: pointer;
+                color: $white;
+            }
+
+            input:hover {
+                border: 2px solid $darkgreen;
+                color: $darkgreen;
+                transition: .3s ease;
+                background-color: $lightgreen;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    section.contactMe div.icontact {
+        @include flex(center, center, nowrap);
+        width: 100%;
+
+        div.icon {
+            width: 30%;
+        }
+    }
+
+    section.contactMe form div.form {
+        width: 50%;
+    }
+
+    section.contactMe form div.textarea textarea {
+        height: 100px;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section.contactMe form {
+        width: 90%;
+    }
+}
+
+

@@ -1,0 +1,141 @@
+section.hero {
+    @include flex(center, flex-start, wrap);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.842);
+    // background-image: url("../img/pexels-photo-257863.png");
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-size: contain;
+    // background-attachment: fixed;
+    // overflow: hidden;
+    z-index: 300;
+
+    div.sayHello {
+        @include flex(center, center, wrap);
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20vh;
+        color: $white;
+        position: absolute;
+
+        div.notHere {
+            width: 100%;
+            height: 5vh;
+        }
+
+        p {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            color: $white;
+            font-weight: bold;
+            font-size: 35px;
+            text-shadow: 4px 3px 1px $blue;
+        }
+
+        h1 {
+            display: inline-block;
+            width: 100%;
+            margin: 5px;
+            color: $lightgreen;
+            text-shadow: 6px 5px 1px $blue;
+        }
+
+        div {
+            @include flex(center, center, nowrap);
+            width: 100%;
+            font-weight: bold;
+            font-size: 35px;
+            margin: 0;
+
+            p {
+                color: $white;
+                width: 120px;
+            }
+
+            .color-blue {
+                color: $lightgreen;
+                border-right: 3px solid rgba(255,255,255,.75);
+                white-space: nowrap;
+                text-shadow: 4px 3px 1px $blue;
+                animation: blinkTextCursor 500ms steps(44) infinite normal;
+            }
+        }
+        
+        .social.kid {
+            @include flex(center, center, nowrap);
+            width: 100%;
+            z-index: 400;
+            transition: .7s;
+            position: relative;
+
+            .social-kid {
+                border-radius: 50%;
+                margin: 20px;
+                background-color: $darkgreen;
+                width: 40px;
+                height: 40px;
+                @include flex(center, center, nowrap);
+                color: $lightblue;
+                font-size: 22px;
+                cursor: pointer;
+                position: relative;
+                box-shadow: $box-shadow;
+            }
+
+            .social-kid:hover {
+                background-color: rgba(255, 255, 255, 0);
+                color: $blue;
+                border: 2px solid $blue;
+            }
+        }
+    }
+
+    div.photo {
+        @include flex(center, center, nowrap);
+        width: 100%;
+        height: 500px;
+        position: fixed;
+        top: 300px;
+        background-image: url("../img/pexels-photo-257863.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+
+    section.hero {
+        font-size: 45px;
+
+        div.sayHello {
+            right: 300px;
+        }
+
+        div.photo {
+            top: 20vh;
+            left: 190px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+
+    section.hero {
+        font-size: 45px;
+
+        div.sayHello {
+            right: 500px;
+        }
+    }
+} 
+
+
+
+
+
+

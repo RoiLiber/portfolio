@@ -1,0 +1,128 @@
+section.services {
+    background-color: $white;
+    @include flex(center, flex-start, wrap);
+    width: 100%;
+    padding: 40px 80px;
+    min-height: 80vh;
+
+    div.service {
+        @include flex(center, center, wrap);
+        width: 100%;
+        font-size: 30px;
+
+        h1 {
+            font-weight: bold;
+            color: $darkgreen;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0;
+            z-index: 20;
+
+            span {
+                color: $lightgreen;
+            }
+        }
+
+        div {
+            background-color: $darkgreen;
+            width: 80px;
+            height: 5px;
+            margin-bottom: 50px;
+        }
+    }
+
+    div.serviceBox {
+        width: 70%;
+        box-shadow: 0 8px 30px -1px #555;
+        background-color: $lightgreen;
+        margin: 40px;
+        @include flex(center, center, wrap);
+        padding: 40px;
+
+        div {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: 0 8px 30px -1px #555;
+            @include flex(center, center, wrap);
+            background-color: $darkgreen;
+            color: $lightgreen;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        h1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        p {
+            width: 80%;
+            @include flex(center, center, wrap);
+            margin: 0;
+            height: 80px;
+            font-size: 11px;
+            overflow: auto;
+
+            span {
+                background-color: $darkgreen;
+                display: inline-block;
+                border-radius: 15px;
+                margin: 4px 3px;
+                color: $darkgreen;
+            }
+        }
+
+        p::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    div.serviceBox:hover {
+        animation: service 500ms both;
+        box-shadow: 0 8px 30px -1px rgb(161, 161, 161);
+        transition: .3s ease;
+    }
+
+    div.serviceBox:hover > div {
+        background-color: $white;
+        color: $darkgreen;
+        transition: .3s ease;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    section.services div.serviceBox {
+        width: 30%;
+    }
+
+    section.services div.serviceBox:hover {
+        animation: service30 500ms both;
+        box-shadow: 0 8px 30px -1px rgb(161, 161, 161);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section.services div.serviceBox {
+        width: 22%;
+    }
+
+    section.services div.serviceBox:hover {
+        animation: service22 500ms both;
+        box-shadow: 0 8px 30px -1px rgb(161, 161, 161);
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    section.services div.serviceBox {
+        width: 17%;
+    }
+
+    section.services div.serviceBox:hover {
+        animation: service17 500ms both;
+        box-shadow: 0 8px 30px -1px rgb(161, 161, 161);
+    }
+}

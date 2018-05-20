@@ -1,0 +1,193 @@
+@keyframes showNav {
+    0%{
+        position: relative;
+        left: 100px;
+    }
+    100%{
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes word-up {
+    0% {
+        top: 250px;
+    }
+    100% {
+        top: -120px;
+    }
+}
+
+@keyframes clear {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        bottom: 80px;
+    }
+    30% {
+        bottom: 60px;
+    }
+    60% {
+        bottom: 70px;
+    }
+    100% {
+        bottom: 60px;
+    }
+}
+
+@keyframes arrowone {
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+    100% {
+        width: 37px;
+        height: 37px;
+    }
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0, 0, 0, 0.842);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes bio {
+    0% {
+        transform: translateX(-350px);
+	    opacity: 0;
+    }
+    50% {
+        transform: translateX(-250px);
+	    opacity: 0.1;
+    }
+    100% {
+        transform: translateX(0px);
+	    opacity: 1;
+    }
+}
+
+@keyframes likes-up {
+    0% {
+        transform: translatey(-500px);
+	    opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+	    opacity: 1;
+    }
+}
+
+@keyframes service {
+    0% {
+        width: 70%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes service30 {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes service22 {
+    0% {
+        width: 22%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes service17 {
+    0% {
+        width: 17%;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+@keyframes open95 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes open90 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes open80 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes open50 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes open20 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes open60 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes open40 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes open30 {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 30%;
+    }
+}

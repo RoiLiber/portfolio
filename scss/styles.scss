@@ -1,0 +1,89 @@
+@import "variables";
+@import "animation";
+@import "mixin";
+@import "madia_only_screen";
+@import "header";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "section6";
+@import "section7";
+@import "section8";
+@import "section9";
+@import "footer";
+
+
+body {
+    font-family: $fontOne;
+    color: $white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    transition: 1s ease;
+}
+
+*:hover {
+    transition: .3s ease;
+}
+
+div.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+}
+
+div.up {
+    border: 3px solid $darkgreen;
+    border-radius: 50%;
+    @include flex(center, center, nowrap);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 155px;
+    left: 17px;
+    z-index: 300;
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+    color: $darkgreen;
+    font-size: 30px;
+    box-shadow: $box-shadow;
+}
+
+div.arrow {
+    @include flex(center, center, nowrap);
+    width: 40px;
+    height: 70px;
+    position: fixed;
+    bottom: 80px;
+    left: 17px;
+    z-index: 350;
+    cursor: pointer;
+    color: $darkgreen;
+    font-size: 60px;
+    animation: arrow 1.5s infinite;
+    border-top: 5px solid $darkgreen;
+}
+
+div.up:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: $blue;
+    border: 3px solid $blue;
+}
+
+
+
+
+
+
+
+

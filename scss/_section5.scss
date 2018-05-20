@@ -1,0 +1,78 @@
+section.likes {
+    @include flex(center, flex-start, wrap);
+    width: 100%;
+    padding: 40px 80px;
+    background-image: url("../img/code.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 70vh;
+
+    div {
+        width: 25%;
+        @include flex(center, center, wrap);
+        margin: 20px;
+        font-size: 60px;
+        color: $white;
+        cursor: pointer;
+        transform: translateY(-500px);
+        opacity: 0;
+        margin: 30px;
+
+        h1 {
+            width: 100%;
+            @include flex(center, center, nowrap);
+            color: $lightgreen;
+            font-size: 50px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        p {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+            margin: 0;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+}
+
+section.likes:hover div.client {
+    animation: likes-up 1.1s both;
+}
+
+section.likes:hover div.pro {
+    animation: likes-up 1.3s both;
+}
+
+section.likes:hover div.lik {
+    animation: likes-up 650ms both;
+}
+
+section.likes:hover div.downloads {
+    animation: likes-up 500ms both;
+}
+
+section.likes div:hover {
+    color: $lightgreen;
+    transition: .3s ease;
+}
+
+@media only screen and (min-width: 750px) {
+    section.likes div {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section.likes div {
+        width: 25%;
+    }
+}
+
+

@@ -1,0 +1,1356 @@
+@keyframes showNav {
+  0% {
+    position: relative;
+    left: 100px; }
+  100% {
+    position: relative;
+    left: 0; } }
+@keyframes word-up {
+  0% {
+    top: 250px; }
+  100% {
+    top: -120px; } }
+@keyframes clear {
+  0% {
+    width: 0px; }
+  100% {
+    width: 100%; } }
+@keyframes arrow {
+  0% {
+    bottom: 80px; }
+  30% {
+    bottom: 60px; }
+  60% {
+    bottom: 70px; }
+  100% {
+    bottom: 60px; } }
+@keyframes arrowone {
+  0% {
+    width: 40px;
+    height: 40px; }
+  100% {
+    width: 37px;
+    height: 37px; } }
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.842); }
+  to {
+    border-right-color: transparent; } }
+@keyframes bio {
+  0% {
+    transform: translateX(-350px);
+    opacity: 0; }
+  50% {
+    transform: translateX(-250px);
+    opacity: 0.1; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes likes-up {
+  0% {
+    transform: translatey(-500px);
+    opacity: 0; }
+  100% {
+    transform: translatey(0px);
+    opacity: 1; } }
+@keyframes service {
+  0% {
+    width: 70%; }
+  100% {
+    width: 75%; } }
+@keyframes service30 {
+  0% {
+    width: 30%; }
+  100% {
+    width: 40%; } }
+@keyframes service22 {
+  0% {
+    width: 22%; }
+  100% {
+    width: 30%; } }
+@keyframes service17 {
+  0% {
+    width: 17%; }
+  100% {
+    width: 22%; } }
+@keyframes open95 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 95%; } }
+@keyframes open90 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 90%; } }
+@keyframes open80 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 80%; } }
+@keyframes open50 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 50%; } }
+@keyframes open20 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 20%; } }
+@keyframes open60 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 60%; } }
+@keyframes open40 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 40%; } }
+@keyframes open30 {
+  0% {
+    width: 1px; }
+  100% {
+    width: 30%; } }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 30px;
+  z-index: 1000;
+  font-family: "Source Code Pro", monospace; }
+  header div.head {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 35px;
+    font-weight: bold;
+    color: #70B85D;
+    height: 10vh; }
+    header div.head span {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    header div.head div#manu {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 35px;
+      position: relative; }
+      header div.head div#manu div {
+        width: 100%;
+        height: 3px;
+        border-radius: 20px;
+        background-color: #70B85D;
+        margin: 3px;
+        box-shadow: 0 8px 30px -1px #555; }
+    header div.head nav {
+      display: none;
+      font-weight: bold; }
+  header div.scroll {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; }
+    header div.scroll div.scroll-line {
+      height: 7px;
+      background: linear-gradient(45deg, #2C5E2E, #70B85D);
+      width: 0%; }
+  header div.nav {
+    width: 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    display: none;
+    z-index: 500; }
+    header div.nav div {
+      border-radius: 10px 0 0 10px;
+      padding: 10px 10px;
+      cursor: pointer;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2C5E2E;
+      color: #FFFEF1;
+      width: 100px;
+      animation: showNav 500ms; }
+    header div.nav div:hover {
+      background-color: #0C273D; }
+
+div.line {
+  display: flex;
+  width: 100%;
+  height: 5px;
+  background-color: #70B85D;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1001; }
+
+@media only screen and (min-width: 750px) {
+  header div#manu div {
+    display: none; }
+
+  header div.head nav {
+    display: flex;
+    font-size: 20px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header div.head nav div {
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    header div.head nav div:hover {
+      background-color: #0C273D;
+      border-radius: 15px; } }
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.842);
+  z-index: 300; }
+  section.hero div.sayHello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20vh;
+    color: #FFFEF1;
+    position: absolute; }
+    section.hero div.sayHello div.notHere {
+      width: 100%;
+      height: 5vh; }
+    section.hero div.sayHello p {
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+      color: #FFFEF1;
+      font-weight: bold;
+      font-size: 35px;
+      text-shadow: 4px 3px 1px #0C273D; }
+    section.hero div.sayHello h1 {
+      display: inline-block;
+      width: 100%;
+      margin: 5px;
+      color: #70B85D;
+      text-shadow: 6px 5px 1px #0C273D; }
+    section.hero div.sayHello div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      font-weight: bold;
+      font-size: 35px;
+      margin: 0; }
+      section.hero div.sayHello div p {
+        color: #FFFEF1;
+        width: 120px; }
+      section.hero div.sayHello div .color-blue {
+        color: #70B85D;
+        border-right: 3px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        text-shadow: 4px 3px 1px #0C273D;
+        animation: blinkTextCursor 500ms steps(44) infinite normal; }
+    section.hero div.sayHello .social.kid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      z-index: 400;
+      transition: .7s;
+      position: relative; }
+      section.hero div.sayHello .social.kid .social-kid {
+        border-radius: 50%;
+        margin: 20px;
+        background-color: #2C5E2E;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: #54D0ED;
+        font-size: 22px;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 8px 30px -1px #555; }
+      section.hero div.sayHello .social.kid .social-kid:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: #0C273D;
+        border: 2px solid #0C273D; }
+  section.hero div.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 300px;
+    background-image: url("../img/pexels-photo-257863.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden; }
+
+@media only screen and (min-width: 750px) {
+  section.hero {
+    font-size: 45px; }
+    section.hero div.sayHello {
+      right: 300px; }
+    section.hero div.photo {
+      top: 20vh;
+      left: 190px; } }
+@media only screen and (min-width: 1050px) {
+  section.hero {
+    font-size: 45px; }
+    section.hero div.sayHello {
+      right: 500px; } }
+section.me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #FFFEF1;
+  color: #FFFEF1;
+  z-index: 300; }
+  section.me div.con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 80px 10px 80px; }
+    section.me div.con .my-pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      max-width: 500px;
+      max-height: 500px;
+      min-width: 200px;
+      min-height: 200px;
+      box-shadow: 0 8px 30px -1px #555;
+      overflow: hidden;
+      z-index: 5;
+      position: relative; }
+      section.me div.con .my-pic img {
+        width: 100%; }
+      section.me div.con .my-pic div.clear {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.274), rgba(255, 255, 255, 0.274));
+        transition: background 1s linear; }
+        section.me div.con .my-pic div.clear:hover {
+          background: linear-gradient(45deg, rgba(255, 255, 255, 0.274), rgba(0, 0, 0, 0.274)); }
+    section.me div.con div.my-bio {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      max-width: 700px; }
+      section.me div.con div.my-bio .about {
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap; }
+        section.me div.con div.my-bio .about h1 {
+          margin: 0;
+          color: #70B85D; }
+        section.me div.con div.my-bio .about .h {
+          color: #2C5E2E; }
+      section.me div.con div.my-bio .hr {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%; }
+        section.me div.con div.my-bio .hr div {
+          width: 95px;
+          height: 5px;
+          background-color: #2C5E2E; }
+      section.me div.con div.my-bio .bio {
+        font-size: 11px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        transform: translateX(-350px);
+        opacity: 0;
+        z-index: 3;
+        height: 200px; }
+        section.me div.con div.my-bio .bio p span {
+          background-color: #70B85D;
+          color: #70B85D;
+          display: inline-block;
+          border-radius: 15px;
+          margin: 5px 3px; }
+      section.me div.con div.my-bio .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%; }
+        section.me div.con div.my-bio .contact div {
+          background-color: #2C5E2E;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+          text-align: center;
+          color: #54D0ED;
+          margin: 20px 20px 0 0px;
+          padding: 5px 15px;
+          font-size: 20px;
+          font-weight: bold;
+          border: 2px solid #54D0ED;
+          cursor: pointer; }
+        section.me div.con div.my-bio .contact div:hover {
+          background-color: #70B85D;
+          border: 2px solid #0C273D;
+          color: #0C273D;
+          transition: .3s ease; }
+    section.me div.con .social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      border-top: 2px solid #2C5E2E;
+      width: 100%;
+      perspective: 500px; }
+      section.me div.con .social .social-kid {
+        border-radius: 50%;
+        margin: 10px 25px;
+        background-color: #70B85D;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: #2C5E2E;
+        font-size: 20px;
+        border: 2px solid #2C5E2E;
+        cursor: pointer; }
+      section.me div.con .social .social-kid:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: #54D0ED;
+        border: 2px solid #54D0ED; }
+  section.me .img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-top: 2px solid #2C5E2E;
+    width: 100%; }
+    section.me .img .img-kid {
+      border-radius: 50%;
+      box-shadow: 0 8px 30px -1px #555;
+      overflow: hidden;
+      z-index: 5;
+      border-top: 2px solid #2C5E2E;
+      margin: 10px 5px;
+      background-color: #70B85D;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      color: #2C5E2E;
+      font-size: 20px;
+      border: 2px solid #2C5E2E;
+      cursor: pointer; }
+      section.me .img .img-kid img {
+        width: 100%;
+        height: 100%; }
+
+section.me:hover .bio {
+  animation: bio 1.5s steps(100) both; }
+
+@media only screen and (min-width: 750px) {
+  section.me div.con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    section.me div.con div.my-bio {
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 50px;
+      min-width: 400px; }
+      section.me div.con div.my-bio .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap; }
+    section.me div.con div.social {
+      height: 300px;
+      border-top: 2px solid rgba(255, 255, 255, 0);
+      min-width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      section.me div.con div.social .social-kid {
+        min-width: 50px;
+        min-height: 50px; }
+  section.me section.me .img {
+    padding-top: 20px; } }
+@media only screen and (min-width: 1370px) {
+  section.me div.con div.my-bio {
+    min-width: 700px; }
+
+  section.me .img {
+    padding-top: 50px; } }
+section.skills {
+  background-color: #70B85D;
+  z-index: 25;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+  min-height: 90vh; }
+  section.skills div.skillsHead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30px; }
+    section.skills div.skillsHead h1 {
+      font-weight: bold;
+      color: #2C5E2E;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0; }
+      section.skills div.skillsHead h1 span {
+        color: #FFFEF1; }
+    section.skills div.skillsHead div {
+      background-color: #2C5E2E;
+      width: 80px;
+      height: 5px; }
+  section.skills div.skillsMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0 20px; }
+    section.skills div.skillsMain div.bar {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px; }
+      section.skills div.skillsMain div.bar p {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 7px;
+        color: #FFFEF1; }
+      section.skills div.skillsMain div.bar div {
+        height: 15px;
+        width: 100%;
+        background-color: #FFFEF1;
+        display: flex;
+        justify-content: flex-start; }
+        section.skills div.skillsMain div.bar div div.fill {
+          height: 100%;
+          background-color: #2C5E2E;
+          box-shadow: 0 8px 30px -1px #555;
+          display: flex;
+          justify-content: flex-end;
+          width: 1px; }
+        section.skills div.skillsMain div.bar div div.font-comment {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0);
+          position: relative;
+          top: -25px;
+          left: 17px;
+          z-index: 10;
+          font-size: 35px;
+          color: #2C5E2E; }
+          section.skills div.skillsMain div.bar div div.font-comment span {
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            left: -31px;
+            z-index: 15;
+            color: #2C5E2E; }
+  section.skills:hover div.html {
+    animation: open95 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.css {
+    animation: open90 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.scss {
+    animation: open80 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.js {
+    animation: open50 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.jquery {
+    animation: open20 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.ajax {
+    animation: open60 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.design {
+    animation: open40 5s alternate infinite;
+    animation-timing-function: ease; }
+  section.skills:hover div.uiux {
+    animation: open30 5s alternate infinite;
+    animation-timing-function: ease; }
+
+@media only screen and (min-width: 750px) {
+  section.skills div.skillsMain {
+    width: 50%; } }
+section.services {
+  background-color: #FFFEF1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px 80px;
+  min-height: 80vh; }
+  section.services div.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 30px; }
+    section.services div.service h1 {
+      font-weight: bold;
+      color: #2C5E2E;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      z-index: 20; }
+      section.services div.service h1 span {
+        color: #70B85D; }
+    section.services div.service div {
+      background-color: #2C5E2E;
+      width: 80px;
+      height: 5px;
+      margin-bottom: 50px; }
+  section.services div.serviceBox {
+    width: 70%;
+    box-shadow: 0 8px 30px -1px #555;
+    background-color: #70B85D;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px; }
+    section.services div.serviceBox div {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      box-shadow: 0 8px 30px -1px #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #2C5E2E;
+      color: #70B85D;
+      font-size: 35px;
+      cursor: pointer; }
+    section.services div.serviceBox h1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      cursor: pointer; }
+    section.services div.serviceBox p {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0;
+      height: 80px;
+      font-size: 11px;
+      overflow: auto; }
+      section.services div.serviceBox p span {
+        background-color: #2C5E2E;
+        display: inline-block;
+        border-radius: 15px;
+        margin: 4px 3px;
+        color: #2C5E2E; }
+    section.services div.serviceBox p::-webkit-scrollbar {
+      display: none; }
+  section.services div.serviceBox:hover {
+    animation: service 500ms both;
+    box-shadow: 0 8px 30px -1px #a1a1a1;
+    transition: .3s ease; }
+  section.services div.serviceBox:hover > div {
+    background-color: #FFFEF1;
+    color: #2C5E2E;
+    transition: .3s ease; }
+
+@media only screen and (min-width: 750px) {
+  section.services div.serviceBox {
+    width: 30%; }
+
+  section.services div.serviceBox:hover {
+    animation: service30 500ms both;
+    box-shadow: 0 8px 30px -1px #a1a1a1; } }
+@media only screen and (min-width: 1000px) {
+  section.services div.serviceBox {
+    width: 22%; }
+
+  section.services div.serviceBox:hover {
+    animation: service22 500ms both;
+    box-shadow: 0 8px 30px -1px #a1a1a1; } }
+@media only screen and (min-width: 1250px) {
+  section.services div.serviceBox {
+    width: 17%; }
+
+  section.services div.serviceBox:hover {
+    animation: service17 500ms both;
+    box-shadow: 0 8px 30px -1px #a1a1a1; } }
+section.likes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px 80px;
+  background-image: url("../img/code.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 70vh; }
+  section.likes div {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-size: 60px;
+    color: #FFFEF1;
+    cursor: pointer;
+    transform: translateY(-500px);
+    opacity: 0;
+    margin: 30px; }
+    section.likes div h1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      color: #70B85D;
+      font-size: 50px;
+      margin: 0;
+      font-weight: bold; }
+    section.likes div p {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+      margin: 0;
+      font-weight: bold;
+      color: #FFFEF1; }
+
+section.likes:hover div.client {
+  animation: likes-up 1.1s both; }
+
+section.likes:hover div.pro {
+  animation: likes-up 1.3s both; }
+
+section.likes:hover div.lik {
+  animation: likes-up 650ms both; }
+
+section.likes:hover div.downloads {
+  animation: likes-up 500ms both; }
+
+section.likes div:hover {
+  color: #70B85D;
+  transition: .3s ease; }
+
+@media only screen and (min-width: 750px) {
+  section.likes div {
+    width: 40%; } }
+@media only screen and (min-width: 1000px) {
+  section.likes div {
+    width: 25%; } }
+section.myWork {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #FFFEF1;
+  width: 100%;
+  padding: 40px 80px;
+  min-height: calc(90vh + 7px);
+  position: relative; }
+  section.myWork div.workNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30px; }
+    section.myWork div.workNav h1 {
+      font-weight: bold;
+      color: #2C5E2E;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0; }
+      section.myWork div.workNav h1 span {
+        color: #70B85D; }
+    section.myWork div.workNav div {
+      background-color: #2C5E2E;
+      width: 100px;
+      height: 5px; }
+    section.myWork div.workNav nav.workN {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%; }
+      section.myWork div.workNav nav.workN div {
+        font-size: 25px;
+        width: 160px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: #2C5E2E;
+        margin: 20px;
+        padding: 5px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #70B85D; }
+      section.myWork div.workNav nav.workN div#all {
+        background-color: #70B85D;
+        color: #0C273D;
+        border: 2px solid #0C273D; }
+  section.myWork div.contWork {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative; }
+    section.myWork div.contWork div.workBoxWrapper::-webkit-scrollbar {
+      display: none; }
+    section.myWork div.contWork div.workBoxWrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      overflow: scroll;
+      position: relative; }
+      section.myWork div.contWork div.workBoxWrapper div.work {
+        min-height: 350px;
+        max-width: 500px;
+        min-width: 400px;
+        max-height: 500px;
+        box-shadow: 0 8px 30px -1px #555;
+        margin: 30px 0 30px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: local;
+        color: #FFFEF1;
+        z-index: 50; }
+        section.myWork div.contWork div.workBoxWrapper div.work div {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          position: relative;
+          top: 250px;
+          left: 15px; }
+          section.myWork div.contWork div.workBoxWrapper div.work div h2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            cursor: pointer;
+            margin: 0;
+            width: 100%; }
+            section.myWork div.contWork div.workBoxWrapper div.work div h2 span {
+              background-color: #70B85D;
+              color: #70B85D;
+              display: inline-block;
+              border-radius: 15px;
+              margin: 5px 3px;
+              font-size: 15px; }
+          section.myWork div.contWork div.workBoxWrapper div.work div p {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin: 5px 5px;
+            color: #54D0ED;
+            font-size: 20px; }
+      section.myWork div.contWork div.workBoxWrapper div.work.margin-right {
+        margin-left: 0; }
+    section.myWork div.contWork .margin-right {
+      margin-right: 5px; }
+    section.myWork div.contWork div.right, section.myWork div.contWork div.rightArrow {
+      border: 3px solid #54D0ED;
+      border-radius: 0 15px 15px 0;
+      border-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 40px;
+      height: 70px;
+      position: absolute;
+      top: 40%;
+      left: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.226);
+      cursor: pointer;
+      color: #54D0ED;
+      font-size: 30px;
+      box-shadow: 0 8px 30px -1px #555; }
+    section.myWork div.contWork div.rightArrow {
+      left: calc(100% - 40px);
+      border: 3px solid #54D0ED;
+      border-radius: 15px 0 0 15px;
+      border-right: 0; }
+    section.myWork div.contWork div.rightScroll {
+      border: 2px solid #70B85D;
+      border-radius: 15px 25px 0 0;
+      border-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 30px;
+      padding: 10px 15px 10px 10px;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.226);
+      top: 0;
+      right: 0;
+      z-index: 100;
+      color: #70B85D;
+      font-size: 25px; }
+      section.myWork div.contWork div.rightScroll .fa-angle-right {
+        margin-left: 10px; }
+  section.myWork div.work:hover div {
+    animation: word-up 700ms both; }
+  section.myWork div.workNav nav.workN div:hover {
+    background-color: #70B85D;
+    color: #0C273D;
+    border: 2px solid #0C273D;
+    transition: .3s ease; }
+
+@media only screen and (min-width: 750px) {
+  section.myWork div.workNav {
+    width: 80%; }
+
+  section.myWork div.workNav nav.workN div {
+    width: 170px; } }
+section.hireMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px;
+  background-image: url("../img/bed.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: 50;
+  position: relative;
+  min-height: 70vh; }
+  section.hireMe div.hire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%; }
+    section.hireMe div.hire div {
+      width: 180px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      background-color: #2C5E2E;
+      cursor: pointer;
+      border: 2px solid #FFFEF1;
+      color: #FFFEF1;
+      font-size: 35px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 25px; }
+  section.hireMe h1 {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFEF1;
+    border-radius: 15px;
+    background-color: rgba(3, 51, 99, 0.623);
+    box-shadow: 0 8px 30px -1px #555;
+    margin: 0;
+    padding: 0 20px; }
+
+section.hireMe div.hire div:hover {
+  background-color: #70B85D;
+  border: 2px solid #2C5E2E;
+  color: #2C5E2E;
+  transition: .3s ease; }
+
+section.contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #70B85D;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  padding: 40px;
+  min-height: 90vh; }
+  section.contactMe div.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 30px; }
+    section.contactMe div.contact h1 {
+      font-weight: bold;
+      color: #FFFEF1;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0; }
+      section.contactMe div.contact h1 span {
+        color: #2C5E2E; }
+  section.contactMe div.hr {
+    background-color: #2C5E2E;
+    width: 150px;
+    height: 5px;
+    margin-bottom: 50px; }
+  section.contactMe div.icontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    section.contactMe div.icontact div.icon {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 10px; }
+      section.contactMe div.icontact div.icon div {
+        border: 2px solid #FFFEF1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #2C5E2E; }
+      section.contactMe div.icontact div.icon h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #FFFEF1; }
+  section.contactMe div.icontact div div:hover {
+    background-color: #70B85D;
+    border: 2px solid #2C5E2E;
+    color: #2C5E2E; }
+  section.contactMe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #FFFEF1;
+    background-color: rgba(72, 72, 72, 0.281);
+    padding-right: 15px; }
+    section.contactMe form div.form, section.contactMe form div.textarea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 15px 0; }
+      section.contactMe form div.form p, section.contactMe form div.textarea p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: -2px;
+        left: 35px;
+        z-index: 2;
+        color: #2C5E2E;
+        font-size: 32px;
+        width: 20px; }
+      section.contactMe form div.form p.tArea, section.contactMe form div.textarea p.tArea {
+        top: -30px; }
+      section.contactMe form div.form input, section.contactMe form div.textarea input {
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 10px 0 10px 50px;
+        background-color: #FFFEF1;
+        color: #2C5E2E;
+        position: relative; }
+      section.contactMe form div.form textarea, section.contactMe form div.textarea textarea {
+        width: 90%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #FFFEF1;
+        color: #2C5E2E;
+        padding: 10px 0 10px 50px; }
+    section.contactMe form div.buttonArea {
+      width: 100%;
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      section.contactMe form div.buttonArea input {
+        display: flex;
+        padding: 5px 10px;
+        font-size: 25px;
+        border: 2px solid #FFFEF1;
+        border-radius: 25px;
+        font-weight: bold;
+        background-color: #2C5E2E;
+        margin: 5px;
+        cursor: pointer;
+        color: #FFFEF1; }
+      section.contactMe form div.buttonArea input:hover {
+        border: 2px solid #2C5E2E;
+        color: #2C5E2E;
+        transition: .3s ease;
+        background-color: #70B85D; }
+
+@media only screen and (min-width: 750px) {
+  section.contactMe div.icontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%; }
+    section.contactMe div.icontact div.icon {
+      width: 30%; }
+
+  section.contactMe form div.form {
+    width: 50%; }
+
+  section.contactMe form div.textarea textarea {
+    height: 100px;
+    width: 90%; } }
+@media only screen and (min-width: 1000px) {
+  section.contactMe form {
+    width: 90%; } }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 30px;
+  background-color: #2C5E2E;
+  color: black;
+  min-height: 10vh;
+  width: 100%; }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%; }
+    footer .social .social-kid {
+      border-radius: 50%;
+      margin: 16px 25px;
+      background-color: #70B85D;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      color: #2C5E2E;
+      font-size: 20px;
+      border: 2px solid black;
+      cursor: pointer; }
+    footer .social .social-kid:hover {
+      background-color: rgba(255, 255, 255, 0);
+      color: #54D0ED;
+      border: 2px solid #54D0ED; }
+  footer div.ltd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #70B85D;
+    width: 100%;
+    color: #2C5E2E; }
+    footer div.ltd p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      color: #2C5E2E;
+      cursor: pointer;
+      margin: 17px;
+      font-weight: bold; }
+    footer div.ltd p:hover {
+      color: #0C273D; }
+
+body {
+  font-family: "Rokkitt", serif;
+  color: #FFFEF1; }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+* {
+  box-sizing: border-box;
+  transition: 1s ease; }
+
+*:hover {
+  transition: .3s ease; }
+
+div.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFEF1; }
+
+div.up {
+  border: 3px solid #2C5E2E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 155px;
+  left: 17px;
+  z-index: 300;
+  background-color: rgba(255, 255, 255, 0.226);
+  cursor: pointer;
+  color: #2C5E2E;
+  font-size: 30px;
+  box-shadow: 0 8px 30px -1px #555; }
+
+div.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 40px;
+  height: 70px;
+  position: fixed;
+  bottom: 80px;
+  left: 17px;
+  z-index: 350;
+  cursor: pointer;
+  color: #2C5E2E;
+  font-size: 60px;
+  animation: arrow 1.5s infinite;
+  border-top: 5px solid #2C5E2E; }
+
+div.up:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #0C273D;
+  border: 3px solid #0C273D; }
+
+/*# sourceMappingURL=styles.css.map */
